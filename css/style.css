@@ -1,0 +1,25 @@
+/* google font  */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+
+/* common css  */
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* header start  */
+.header {
+}
+
+.menu-icon {
+  display: none;
+}
+
+/* Responsive design start  */
+
+/* smaller device styles start  */
+@media screen and (max-width: 576px) {
+}
+
+/* medium device styles start  */
+@media screen and (min-width: 577px) and (max-width: 991px) {
+}

@@ -1,5 +1,5 @@
 /* google font  */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap");
 
 /* common css  */
 body {
@@ -7,19 +7,154 @@ body {
 }
 
 /* header start  */
-.header {
+/* navbar start  */
+.nav-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 90px;
 }
-
-.menu-icon {
+.nav-container ul {
+  display: flex;
+}
+.nav-container ul li {
+  list-style: none;
+  margin-left: 20px;
+}
+.three-dot-icon {
   display: none;
 }
+.logo h3 {
+  font-size: 24px;
+  font-weight: 700;
+}
+.nav-container ul li a {
+  color: #000000;
+  text-decoration: none;
+  font-weight: 500;
+}
+.nav-container ul li :hover {
+  color: #e02c6d;
+  cursor: pointer;
+}
 
+/* header banner start  */
+.header-banner {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-left: 130px;
+}
+.h-banner-description {
+  width: 40%;
+  margin-right: 140px;
+}
+.h-banner-image {
+  width: 40%;
+}
+.h-banner-image img {
+  width: 75%;
+}
+.h-banner-title {
+  font-size: 52px;
+  margin: 0 0;
+  line-height: 65px;
+}
+.h-banner-subtitle {
+  font-size: 18px;
+  font-weight: 500;
+}
+.h-banner-btn {
+  background-color: #e02c6d;
+  color: #ffffff;
+  font-weight: 700;
+  padding: 10px 25px;
+  border: 0;
+  border-radius: 40px;
+}
 /* Responsive design start  */
 
 /* smaller device styles start  */
 @media screen and (max-width: 576px) {
+  /* header start  */
+  /* navbar start  */
+  .nav-container {
+    margin-top: 30px;
+  }
+  .nav-container ul {
+    padding: 0;
+  }
+  .nav-container ul li {
+    margin-left: 0;
+  }
+  .three-dot-icon {
+    display: block;
+  }
+  .d-none-menu {
+    display: none;
+  }
+  .logo h3 {
+    font-size: 1.2em;
+  }
+
+  /* header banner start  */
+  .header-banner {
+    flex-direction: column-reverse;
+    justify-content: center;
+    margin: 60px 50px;
+  }
+  .h-banner-description {
+    width: 100%;
+    margin-right: 0;
+  }
+  .h-banner-image {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .h-banner-image img {
+    width: 100%;
+  }
 }
 
 /* medium device styles start  */
 @media screen and (min-width: 577px) and (max-width: 991px) {
+  /* header start  */
+  /* navbar start  */
+  .nav-container {
+    margin-top: 40px;
+  }
+  .nav-container ul {
+    padding: 0;
+  }
+  .nav-container ul li {
+    margin-left: 0;
+  }
+  .three-dot-icon {
+    display: block;
+  }
+  .d-none-menu {
+    display: none;
+  }
+  .logo h3 {
+    font-size: 2em;
+  }
+
+  /* header banner section start  */
+  .header-banner {
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin: 100px 0 100px 140px;
+  }
+  .h-banner-description {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .h-banner-image {
+    width: 100%;
+  }
+  .h-banner-image img {
+    width: 75%;
+  }
 }

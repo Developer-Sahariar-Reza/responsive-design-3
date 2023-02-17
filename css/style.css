@@ -73,6 +73,25 @@ body {
   border: 0;
   border-radius: 40px;
 }
+
+/* sponsor section start  */
+.sponsor {
+  width: 75%;
+  margin: 100px auto;
+  border-bottom: 1px solid #808080;
+  border-top: 1px solid #808080;
+  padding: 15px;
+}
+.s-container {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 10px;
+  align-items: center;
+}
+.s-container > div {
+  width: 80%;
+}
+
 /* Responsive design start  */
 
 /* smaller device styles start  */
@@ -115,6 +134,11 @@ body {
   .h-banner-image img {
     width: 100%;
   }
+
+  /* sponsor section start  */
+  .s-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 /* medium device styles start  */
@@ -156,5 +180,10 @@ body {
   }
   .h-banner-image img {
     width: 75%;
+  }
+
+  /* sponsor section start  */
+  .s-container {
+    grid-template-columns: repeat(4, 1fr);
   }
 }

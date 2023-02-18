@@ -1,5 +1,5 @@
 /* google font  */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
 
 /* common css  */
 body {
@@ -92,6 +92,63 @@ body {
   width: 80%;
 }
 
+/* popular section start  */
+.popular {
+  width: 75%;
+  margin: 100px auto;
+}
+.p-title {
+  font-weight: 700;
+  font-size: 28px;
+  text-align: center;
+}
+.p-item-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+.item {
+  width: 330px;
+  height: 480px;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 2px 1px 3px 1px #787885;
+}
+.item img {
+  width: 328px;
+  height: 255px;
+  margin-bottom: 15px;
+}
+.item h4 {
+  font-size: 28px;
+  font-weight: 500;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+.item h5 {
+  font-size: 24px;
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.item p {
+  font-weight: 700;
+  font-size: 14px;
+}
+.rating {
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+.rating-icon {
+  color: #fb8200;
+}
+.p-item-color {
+  color: #787885;
+}
+.p-item-description {
+  margin-top: 0;
+  margin-bottom: 0;
+}
 /* Responsive design start  */
 
 /* smaller device styles start  */
@@ -132,12 +189,21 @@ body {
     margin-bottom: 50px;
   }
   .h-banner-image img {
-    width: 100%;
+    width: 90%;
   }
 
   /* sponsor section start  */
   .s-container {
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* popular section start  */
+  .popular {
+    width: 90%;
+    margin: 100px 15px 100px 5px;
+  }
+  .p-item-container {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 
@@ -185,5 +251,13 @@ body {
   /* sponsor section start  */
   .s-container {
     grid-template-columns: repeat(4, 1fr);
+  }
+  /* popular section start  */
+  .popular {
+    width: 90%;
+    margin: 0 0;
+  }
+  .p-item-container {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
